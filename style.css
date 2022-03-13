@@ -102,8 +102,11 @@ input {
         margin: 0;
         padding-left: 15vw;
     }
-    input :focus {
+    input:focus, body {
         background-color: #1a1a99;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     #information-wrapper {
         width: 85vw;
