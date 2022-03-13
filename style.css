@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2a2a72;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    width: 50vw;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #4c2885;
+    color: #fff;
+    padding: 0px 70px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#img-logo {
+    min-height: 119px;
+    min-width: 119px;
+    max-height: 120px;
+    max-width: 120px;
+    border-radius: 50%;
+    display: inline;
+}
+
+#information-wrapper {
+    background-color: #4c2885;
+    margin-top: 50px;
+    width: 47vw;
+    height: fit-content;
+    border-radius: 8px;
+    padding: 20px;
+    color: #fff;
+    display: none;
+}
+
+#information-wrapper li {
+    list-style-type: none;
+}
+
+#first-part {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#img-name {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#name {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.reposi {
+    display: inline-block;
+    background-color: #1a1a99;
+    padding: 10px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.fa-search {
+    margin-left: -45vw;
+    margin-top: -36px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#info {
+    color: #fff;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+/* media query  */
+
+@media (max-width: 550px) {
+    input {
+        width: 85vw;
+        font-size: 18px;
+        padding: 8px;
+        margin: 0;
+        padding-left: 15vw;
+    }
+    input :focus {
+        background-color: #1a1a99;
+    }
+    #information-wrapper {
+        width: 85vw;
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+        margin-top: 30px;
+    }
+    .fa-search {
+        margin-left: -70vw;
+        margin-top: -36px;
+        font-size: 30px;
+    }
+    #img-logo {
+        min-height: 80px;
+        min-width: 80px;
+        max-height: 84px;
+        max-width: 84px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-left: 20px;
+        vertical-align: baseline;
+        margin-left: 10px;
+    }
+    #name {
+        margin-top: 40px;
+        margin-left: 30px;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+    /* followers, following and total number of repositories  */
+    #first-part {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 16px;
+        margin-left: 15px;
+    }
+    .reposi {
+        display: inline-block;
+        background-color: #1a1a99;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+    #repo5 {
+        display: none;
+    }
+}
